@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 import matplotlib
-matplotlib.use("TkAgg")   # hoặc TkAgg
+matplotlib.use("TkAgg")   # run matplotlib with linux
 
-# Input
+# Input - Output variables
 temperature = ctrl.Antecedent(np.arange(0, 41, 1), 'temperature')
 fan_speed = ctrl.Consequent(np.arange(0, 101, 1), 'fan_speed')
 
